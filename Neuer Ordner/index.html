@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080909">
+  <meta name="description" content="DAKI – meine Seite, meine Musik, meine Community.">
+  <title>DAKI | Official Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#start" aria-label="DAKI Startseite"><span class="brand-mark">D</span><span>DAKI<span class="gold">.</span></span></a>
+    <nav id="nav">
+      <a href="#start">Start</a>
+      <a href="#about">Über mich</a>
+      <a href="#music">Musik</a>
+      <a href="#community">Community</a>
+    </nav>
+    <a class="nav-cta" href="https://discord.gg/6Rq4yJ9jK" target="_blank" rel="noopener">Community <span>↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="start">
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="eyebrow-line"></span> OFFICIAL WEBSITE</p>
+        <p class="overline">WILLKOMMEN IN MEINER WELT</p>
+        <h1>DAKI<span class="gold">.</span></h1>
+        <p class="hero-copy">Eigener Vibe. Echte Menschen. Gute Zeiten.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#community">Zur Community <span>↗</span></a>
+          <a class="button button-ghost" href="#about">Mehr entdecken</a>
+        </div>
+        <div class="hero-meta"><span>EST. BY DAKI</span><i></i><span>MUSIC · COMMUNITY · VIBES</span></div>
+      </div>
+      <div class="hero-signature">D<span>✦</span></div>
+      <a class="scroll-cue" href="#about">ENTDECKEN <span>↓</span></a>
+    </section>
+
+    <section class="music-strip" id="music" aria-label="Musikplayer">
+      <div class="music-info">
+        <span class="equalizer" id="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <div><strong>DAKI'S VIBE</strong><small id="trackStatus">Dein Soundtrack · Drücke Play</small></div>
+      </div>
+      <audio id="siteAudio" preload="metadata" loop>
+        <source src="music.mp3" type="audio/mpeg">
+      </audio>
+      <button class="music-button" id="musicToggle" type="button" aria-label="Musik abspielen">▶ <span>PLAY MUSIC</span></button>
+      <div class="music-note">Musik startet erst nach deinem Klick</div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-kicker">01 / ÜBER MICH</div>
+      <div class="about-grid">
+        <div>
+          <p class="overline">DIE PERSON HINTER DEM NAMEN</p>
+          <h2>MEIN VIBE.<br><span>MEINE WELT.</span></h2>
+        </div>
+        <div class="about-text">
+          <p>Ich bin Daki – schön, dass du hier bist. Diese Seite ist mein eigener Platz im Netz: ein bisschen Musik, gute Vibes und eine Community, die zusammenhält.</p>
+          <p>Schau dich um, hör rein und komm bei uns vorbei. Ich freue mich, dich in der Community zu sehen.</p>
+          <div class="signature">Bis gleich online. <span>— Daki</span></div>
+        </div>
+      </div>
+      <div class="values">
+        <div><span>01</span><strong>RESPEKT</strong><small>Jeder ist willkommen.</small></div>
+        <div><span>02</span><strong>LOYALITÄT</strong><small>Einer für alle.</small></div>
+        <div><span>03</span><strong>GUTE VIBES</strong><small>Zusammen eine gute Zeit.</small></div>
+      </div>
+    </section>
+
+    <section class="community-section section" id="community">
+      <div class="section-kicker">02 / BLEIB VERBUNDEN</div>
+      <div class="section-heading">
+        <div><p class="overline">WIR SEHEN UNS ONLINE</p><h2>DEIN PLATZ.<br><span>UNSERE COMMUNITY.</span></h2></div>
+        <p class="heading-note">Komm dazu, lern neue Leute kennen und werde Teil der Community.</p>
+      </div>
+      <div class="social-grid">
+        <a class="social-card discord" href="https://discord.gg/6Rq4yJ9jK" target="_blank" rel="noopener">
+          <span class="social-symbol">⌘</span><span class="social-label">TRIFF DIE COMMUNITY</span><strong>Discord</strong><span class="social-arrow">↗</span>
+        </a>
+        <a class="social-card twitch" id="twitchCard" href="#" target="_blank" rel="noopener">
+          <span class="social-symbol">◈</span><span class="social-label">LIVE & STREAMS</span><strong>Twitch</strong><span class="social-arrow">↗</span>
+        </a>
+        <a class="social-card tiktok" id="tiktokCard" href="#" target="_blank" rel="noopener">
+          <span class="social-symbol">♪</span><span class="social-label">CLIPS & MOMENTE</span><strong>TikTok</strong><span class="social-arrow">↗</span>
+        </a>
+      </div>
+      <p class="social-hint">Twitch und TikTok kannst du in <code>script.js</code> mit deinen Profilnamen ergänzen.</p>
+    </section>
+
+    <section class="quote-section">
+      <span class="quote-mark">“</span>
+      <p>ECHTE MENSCHEN.<br><span>GUTE VIBES.</span></p>
+      <span class="quote-sub">DAKI · OFFICIAL WEBSITE</span>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#start"><span class="brand-mark">D</span><span>DAKI<span class="gold">.</span></span></a>
+    <p>Mit Liebe für die Community gemacht.</p>
+    <a href="#start" class="back-top">ZURÜCK NACH OBEN ↑</a>
+  </footer>
+</body>
+</html>
